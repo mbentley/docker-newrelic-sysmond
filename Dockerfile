@@ -10,4 +10,4 @@ RUN (apt-get update &&\
   apt-get purge -y wget &&\
   rm -rf /var/lib/apt/lists/*)
 
-CMD nrsysmond-config --set license_key=$NEW_RELIC_LICENSE_KEY && nrsysmond -c /etc/newrelic/nrsysmond.cfg -n localdev -l /dev/stdout -f
+CMD nrsysmond-config --set license_key=$NEW_RELIC_LICENSE_KEY && nrsysmond -c /etc/newrelic/nrsysmond.cfg -l /dev/stdout -f
